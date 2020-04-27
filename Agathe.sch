@@ -2361,54 +2361,39 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5150 57
 	1    0    0    -1  
 $EndComp
 NoConn ~ 5600 6300
-Text GLabel 2850 1750 2    50   Input ~ 0
-COL8
 Text GLabel 2850 1850 2    50   Input ~ 0
+COL8
+Text GLabel 2850 1750 2    50   Input ~ 0
 COL7
-Text GLabel 2850 2050 2    50   Input ~ 0
-COL14
-Text GLabel 2850 2150 2    50   Input ~ 0
-COL11
-Text GLabel 2850 2250 2    50   Input ~ 0
-COL10
-Text GLabel 2850 2350 2    50   Input ~ 0
-COL5
-Text GLabel 2850 2450 2    50   Input ~ 0
-COL9
-Text GLabel 2850 2650 2    50   Input ~ 0
-COL4
 Text GLabel 2850 2750 2    50   Input ~ 0
+COL14
+Text GLabel 2850 3350 2    50   Input ~ 0
+COL5
+Text GLabel 2850 1950 2    50   Input ~ 0
+COL9
+Text GLabel 2850 3550 2    50   Input ~ 0
+COL4
+Text GLabel 2850 3650 2    50   Input ~ 0
 COL3
 Text GLabel 2850 4150 2    50   Input ~ 0
 ROW0
 Text GLabel 2850 4250 2    50   Input ~ 0
 ROW1
-Text GLabel 2850 3150 2    50   Input ~ 0
-ROW2
-Text GLabel 2850 3250 2    50   Input ~ 0
-ROW3
-Text GLabel 2850 3350 2    50   Input ~ 0
-COL6
 Text GLabel 2850 3450 2    50   Input ~ 0
-ROW4
+ROW2
 Text GLabel 2850 2950 2    50   Input ~ 0
 COL13
 Wire Wire Line
 	2850 3850 3200 3850
 Text GLabel 2850 3050 2    50   Input ~ 0
 COL12
-Text GLabel 2850 3950 2    50   Input ~ 0
-COL2
-Text GLabel 2850 3550 2    50   Input ~ 0
+Text GLabel 2850 2350 2    50   Input ~ 0
 COL0
-Text GLabel 2850 3650 2    50   Input ~ 0
-COL1
 NoConn ~ 2850 4350
 NoConn ~ 2850 4450
 NoConn ~ 2850 4550
 NoConn ~ 2850 4650
 NoConn ~ 1650 2350
-NoConn ~ 2850 1950
 Wire Wire Line
 	10550 1800 10550 3200
 Wire Wire Line
@@ -2484,4 +2469,18 @@ Wire Wire Line
 Wire Wire Line
 	11000 3900 11000 2500
 Connection ~ 11000 2500
+Text GLabel 2850 3150 2    50   Input ~ 0
+ROW4
+Text GLabel 2850 3250 2    50   Input ~ 0
+ROW3
+Text GLabel 2850 2050 2    50   Input ~ 0
+COL10
+Text GLabel 2850 2450 2    50   Input ~ 0
+COL11
+Text GLabel 2850 2250 2    50   Input ~ 0
+COL1
+Text GLabel 2850 2150 2    50   Input ~ 0
+COL2
+Text GLabel 2850 2650 2    50   Input ~ 0
+COL6
 $EndSCHEMATC
