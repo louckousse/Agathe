@@ -102,17 +102,6 @@ F 3 "~" V 10350 1400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX15
-U 1 1 5EB09161
-P 10850 1150
-F 0 "MX15" H 10883 1373 60  0000 C CNN
-F 1 "MX-NoLED" H 10883 1299 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED" H 10225 1125 60  0001 C CNN
-F 3 "" H 10225 1125 60  0001 C CNN
-	1    10850 1150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D_Small D15
 U 1 1 5EB09167
 P 10800 1400
@@ -212,17 +201,6 @@ F 3 "~" V 10350 2100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX30
-U 1 1 5EB1060F
-P 10850 1850
-F 0 "MX30" H 10883 2073 60  0000 C CNN
-F 1 "MX-NoLED" H 10883 1999 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED" H 10225 1825 60  0001 C CNN
-F 3 "" H 10225 1825 60  0001 C CNN
-	1    10850 1850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D_Small D30
 U 1 1 5EB10615
 P 10800 2100
@@ -298,17 +276,6 @@ F 2 "Diode_SMD:D_SOD-123" V 9900 2800 50  0001 C CNN
 F 3 "~" V 9900 2800 50  0001 C CNN
 	1    9900 2800
 	0    -1   -1   0   
-$EndComp
-$Comp
-L MX_Alps_Hybrid:MX-NoLED MX45
-U 1 1 5EB13C3F
-P 10850 2550
-F 0 "MX45" H 10883 2773 60  0000 C CNN
-F 1 "MX-NoLED" H 10883 2699 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED" H 10225 2525 60  0001 C CNN
-F 3 "" H 10225 2525 60  0001 C CNN
-	1    10850 2550
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:D_Small D45
@@ -1529,7 +1496,7 @@ Text GLabel 10100 800  1    50   Input ~ 0
 COL12
 Text GLabel 10550 800  1    50   Input ~ 0
 COL13
-Text GLabel 11000 800  1    50   Input ~ 0
+Text GLabel 10700 800  1    50   Input ~ 0
 COL14
 Text GLabel 4300 1500 0    50   Input ~ 0
 ROW0
@@ -1884,14 +1851,6 @@ Connection ~ 10550 1800
 Wire Wire Line
 	10550 1800 10550 1100
 Connection ~ 10550 3200
-Wire Wire Line
-	11000 800  11000 1100
-Connection ~ 11000 1100
-Wire Wire Line
-	11000 1100 11000 1800
-Connection ~ 11000 1800
-Wire Wire Line
-	11000 1800 11000 2500
 $Comp
 L MCU_Microchip_ATmega:ATmega32U4-AU U1
 U 1 1 5EC4E28C
@@ -2361,9 +2320,9 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5150 57
 	1    0    0    -1  
 $EndComp
 NoConn ~ 5600 6300
-Text GLabel 2850 1850 2    50   Input ~ 0
+Text GLabel 2850 4350 2    50   Input ~ 0
 COL8
-Text GLabel 2850 1750 2    50   Input ~ 0
+Text GLabel 2850 4450 2    50   Input ~ 0
 COL7
 Text GLabel 2850 2750 2    50   Input ~ 0
 COL14
@@ -2389,8 +2348,6 @@ Text GLabel 2850 3050 2    50   Input ~ 0
 COL12
 Text GLabel 2850 2350 2    50   Input ~ 0
 COL0
-NoConn ~ 2850 4350
-NoConn ~ 2850 4450
 NoConn ~ 2850 4550
 NoConn ~ 2850 4650
 NoConn ~ 1650 2350
@@ -2466,9 +2423,6 @@ Wire Wire Line
 Connection ~ 6250 5850
 Wire Wire Line
 	6250 5850 6350 5850
-Wire Wire Line
-	11000 3900 11000 2500
-Connection ~ 11000 2500
 Text GLabel 2850 3150 2    50   Input ~ 0
 ROW4
 Text GLabel 2850 3250 2    50   Input ~ 0
@@ -2483,4 +2437,107 @@ Text GLabel 2850 2150 2    50   Input ~ 0
 COL2
 Text GLabel 2850 2650 2    50   Input ~ 0
 COL6
+$Comp
+L Device:Rotary_Encoder_Switch MX30
+U 1 1 5EAE26F0
+P 11100 1900
+F 0 "MX30" H 11100 1533 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 11100 1624 50  0000 C CNN
+F 2 "Rotary_Encoder:rotary_x_MX" H 10950 2060 50  0001 C CNN
+F 3 "~" H 11100 2160 50  0001 C CNN
+	1    11100 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Rotary_Encoder_Switch MX45
+U 1 1 5EAE300D
+P 11100 2600
+F 0 "MX45" H 11100 2233 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 11100 2324 50  0000 C CNN
+F 2 "Rotary_Encoder:rotary_x_MX" H 10950 2760 50  0001 C CNN
+F 3 "~" H 11100 2860 50  0001 C CNN
+	1    11100 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Rotary_Encoder_Switch MX15
+U 1 1 5EADE264
+P 11100 1200
+F 0 "MX15" H 11100 833 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 11100 924 50  0000 C CNN
+F 2 "Rotary_Encoder:rotary_x_MX" H 10950 1360 50  0001 C CNN
+F 3 "~" H 11100 1460 50  0001 C CNN
+	1    11100 1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10700 800  10700 1100
+Wire Wire Line
+	10700 1100 10800 1100
+Wire Wire Line
+	10700 1100 10700 1800
+Wire Wire Line
+	10700 1800 10800 1800
+Connection ~ 10700 1100
+Wire Wire Line
+	10700 1800 10700 2500
+Wire Wire Line
+	10700 2500 10800 2500
+Connection ~ 10700 1800
+Wire Wire Line
+	10700 2500 10700 3500
+Wire Wire Line
+	10700 3500 11000 3500
+Wire Wire Line
+	11000 3500 11000 3900
+Connection ~ 10700 2500
+$Comp
+L power:GND #PWR0113
+U 1 1 5EBCE257
+P 11400 1200
+F 0 "#PWR0113" H 11400 950 50  0001 C CNN
+F 1 "GND" V 11405 1072 50  0000 R CNN
+F 2 "" H 11400 1200 50  0001 C CNN
+F 3 "" H 11400 1200 50  0001 C CNN
+	1    11400 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5EBCE8DB
+P 11400 1900
+F 0 "#PWR0115" H 11400 1650 50  0001 C CNN
+F 1 "GND" V 11405 1772 50  0000 R CNN
+F 2 "" H 11400 1900 50  0001 C CNN
+F 3 "" H 11400 1900 50  0001 C CNN
+	1    11400 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5EBCEE25
+P 11400 2600
+F 0 "#PWR0116" H 11400 2350 50  0001 C CNN
+F 1 "GND" V 11405 2472 50  0000 R CNN
+F 2 "" H 11400 2600 50  0001 C CNN
+F 3 "" H 11400 2600 50  0001 C CNN
+	1    11400 2600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 11400 1300 2    50   Input ~ 0
+ROTA
+Text GLabel 11400 1100 2    50   Input ~ 0
+ROTB
+Text GLabel 11400 2000 2    50   Input ~ 0
+ROTA
+Text GLabel 11400 2700 2    50   Input ~ 0
+ROTA
+Text GLabel 11400 1800 2    50   Input ~ 0
+ROTB
+Text GLabel 11400 2500 2    50   Input ~ 0
+ROTB
+Text GLabel 2850 1850 2    50   Input ~ 0
+ROTA
+Text GLabel 2850 1750 2    50   Input ~ 0
+ROTB
 $EndSCHEMATC
