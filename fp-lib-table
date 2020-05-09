@@ -3,4 +3,6 @@
   (lib (name Keebio-Parts)(type KiCad)(uri ${KEEBS}/Agathe/Keebio-Parts.pretty)(options "")(descr ""))
   (lib (name MX_Only)(type KiCad)(uri ${KEEBS}/Agathe/MX_Alps_Hybrid/MX_Only.pretty)(options "")(descr ""))
   (lib (name Type-C)(type KiCad)(uri ${KEEBS}/Agathe/Type-C.pretty)(options "")(descr ""))
+  (lib (name parts)(type KiCad)(uri ${KEEBS}/louckousse-kicad/parts.pretty)(options "")(descr ""))
+  (lib (name cc)(type KiCad)(uri ${KEEBS}/fancy-kicad-stuff/cc.pretty)(options "")(descr ""))
 )
