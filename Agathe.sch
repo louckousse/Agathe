@@ -2346,7 +2346,6 @@ Wire Wire Line
 	2550 3300 2900 3300
 Text GLabel 2550 2500 2    50   Input ~ 0
 COL12
-NoConn ~ 2550 4000
 NoConn ~ 1350 1800
 Wire Wire Line
 	10000 1800 10000 3200
@@ -2848,7 +2847,6 @@ Wire Wire Line
 Wire Wire Line
 	4800 5750 4500 5750
 NoConn ~ 3900 5750
-NoConn ~ 2550 3400
 Text GLabel 2550 2100 2    50   Input ~ 0
 COL0
 Text GLabel 2550 1800 2    50   Input ~ 0
@@ -2912,4 +2910,6 @@ F 3 "" H 5800 6600 50  0001 C CNN
 	1    5800 6600
 	1    0    0    -1  
 $EndComp
+NoConn ~ 2550 4000
+NoConn ~ 2550 3400
 $EndSCHEMATC
