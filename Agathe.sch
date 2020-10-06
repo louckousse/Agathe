@@ -2910,6 +2910,59 @@ F 3 "" H 5800 6600 50  0001 C CNN
 	1    5800 6600
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2550 4000
-NoConn ~ 2550 3400
+$Comp
+L Connector:Conn_01x01_Female J2
+U 1 1 5F7E232B
+P 2750 3400
+F 0 "J2" H 2778 3426 50  0000 L CNN
+F 1 "GPIO 1" H 2778 3335 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2750 3400 50  0001 C CNN
+F 3 "~" H 2750 3400 50  0001 C CNN
+	1    2750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J3
+U 1 1 5F7E3E80
+P 2750 4000
+F 0 "J3" H 2778 4026 50  0000 L CNN
+F 1 "GPIO 2" H 2778 3935 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2750 4000 50  0001 C CNN
+F 3 "~" H 2750 4000 50  0001 C CNN
+	1    2750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J4
+U 1 1 5F803717
+P 4850 6600
+F 0 "J4" H 4878 6576 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 4878 6485 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4850 6600 50  0001 C CNN
+F 3 "~" H 4850 6600 50  0001 C CNN
+	1    4850 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 5F805F11
+P 4650 6600
+F 0 "#PWR03" H 4650 6450 50  0001 C CNN
+F 1 "VCC" H 4665 6773 50  0000 C CNN
+F 2 "" H 4650 6600 50  0001 C CNN
+F 3 "" H 4650 6600 50  0001 C CNN
+	1    4650 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5F807ABA
+P 4650 6700
+F 0 "#PWR04" H 4650 6450 50  0001 C CNN
+F 1 "GND" H 4655 6527 50  0000 C CNN
+F 2 "" H 4650 6700 50  0001 C CNN
+F 3 "" H 4650 6700 50  0001 C CNN
+	1    4650 6700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
