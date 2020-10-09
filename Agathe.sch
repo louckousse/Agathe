@@ -1852,17 +1852,6 @@ Wire Wire Line
 	10000 1800 10000 1100
 Connection ~ 10000 3200
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
-U 1 1 5EC4E28C
-P 1950 2700
-F 0 "U1" H 1950 811 50  0000 C CNN
-F 1 "ATmega32U4-AU" H 1950 720 50  0000 C CNN
-F 2 "Keebio-Parts:ATMEGA32U4-AU" H 1950 2700 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 1950 2700 50  0001 C CNN
-	1    1950 2700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0101
 U 1 1 5EC6235D
 P 1950 4800
@@ -1877,7 +1866,6 @@ Wire Wire Line
 	1950 4800 1950 4500
 Wire Wire Line
 	1950 4500 1850 4500
-Connection ~ 1950 4500
 $Comp
 L power:+5V #PWR0102
 U 1 1 5EC70572
@@ -1891,12 +1879,6 @@ F 3 "" H 1850 700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 700  1850 900 
-Wire Wire Line
-	1850 900  1950 900 
-Connection ~ 1850 900 
-Connection ~ 1950 900 
-Wire Wire Line
-	1950 900  2050 900 
 $Comp
 L Device:R_Small R1
 U 1 1 5EC80F43
@@ -2192,7 +2174,6 @@ F 3 "~" H 1350 900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1350 1000 1350 1200
-Connection ~ 1350 1200
 $Comp
 L power:+5V #PWR0110
 U 1 1 5EF195A4
@@ -2342,8 +2323,6 @@ Text GLabel 2550 2900 2    50   Input ~ 0
 ROW2
 Text GLabel 2550 2400 2    50   Input ~ 0
 COL13
-Wire Wire Line
-	2550 3300 2900 3300
 Text GLabel 2550 2500 2    50   Input ~ 0
 COL12
 NoConn ~ 1350 1800
@@ -2911,58 +2890,76 @@ F 3 "" H 5800 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J2
-U 1 1 5F7E232B
-P 2750 3400
-F 0 "J2" H 2778 3426 50  0000 L CNN
-F 1 "GPIO 1" H 2778 3335 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2750 3400 50  0001 C CNN
-F 3 "~" H 2750 3400 50  0001 C CNN
-	1    2750 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J3
-U 1 1 5F7E3E80
-P 2750 4000
-F 0 "J3" H 2778 4026 50  0000 L CNN
-F 1 "GPIO 2" H 2778 3935 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2750 4000 50  0001 C CNN
-F 3 "~" H 2750 4000 50  0001 C CNN
-	1    2750 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x02_Female J4
 U 1 1 5F803717
-P 4850 6600
-F 0 "J4" H 4878 6576 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 4878 6485 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4850 6600 50  0001 C CNN
-F 3 "~" H 4850 6600 50  0001 C CNN
-	1    4850 6600
+P 5200 6450
+F 0 "J4" H 5228 6426 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 5228 6335 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5200 6450 50  0001 C CNN
+F 3 "~" H 5200 6450 50  0001 C CNN
+	1    5200 6450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR03
 U 1 1 5F805F11
-P 4650 6600
-F 0 "#PWR03" H 4650 6450 50  0001 C CNN
-F 1 "VCC" H 4665 6773 50  0000 C CNN
-F 2 "" H 4650 6600 50  0001 C CNN
-F 3 "" H 4650 6600 50  0001 C CNN
-	1    4650 6600
+P 5000 6450
+F 0 "#PWR03" H 5000 6300 50  0001 C CNN
+F 1 "VCC" H 5015 6623 50  0000 C CNN
+F 2 "" H 5000 6450 50  0001 C CNN
+F 3 "" H 5000 6450 50  0001 C CNN
+	1    5000 6450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 5F807ABA
-P 4650 6700
-F 0 "#PWR04" H 4650 6450 50  0001 C CNN
-F 1 "GND" H 4655 6527 50  0000 C CNN
-F 2 "" H 4650 6700 50  0001 C CNN
-F 3 "" H 4650 6700 50  0001 C CNN
-	1    4650 6700
+P 5000 6550
+F 0 "#PWR04" H 5000 6300 50  0001 C CNN
+F 1 "GND" H 5005 6377 50  0000 C CNN
+F 2 "" H 5000 6550 50  0001 C CNN
+F 3 "" H 5000 6550 50  0001 C CNN
+	1    5000 6550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 5F858F30
+P 5150 7150
+F 0 "J2" H 5178 7126 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 5178 7035 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5150 7150 50  0001 C CNN
+F 3 "~" H 5150 7150 50  0001 C CNN
+	1    5150 7150
+	1    0    0    -1  
+$EndComp
+Text GLabel 2550 4000 2    50   Input ~ 0
+GPIO2
+Connection ~ 1350 1200
+Connection ~ 1950 900 
+Connection ~ 1850 900 
+Wire Wire Line
+	1850 900  1950 900 
+Connection ~ 1950 4500
+Wire Wire Line
+	2550 3300 2900 3300
+Wire Wire Line
+	1950 900  2050 900 
+Text GLabel 2550 3400 2    50   Input ~ 0
+GPIO1
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 5EC4E28C
+P 1950 2700
+F 0 "U1" H 1950 811 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 1950 720 50  0000 C CNN
+F 2 "Keebio-Parts:ATMEGA32U4-AU" H 1950 2700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 1950 2700 50  0001 C CNN
+	1    1950 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 7150 0    50   Input ~ 0
+GPIO1
+Text GLabel 4950 7250 0    50   Input ~ 0
+GPIO2
 $EndSCHEMATC
