@@ -4,4 +4,8 @@
 *.net
 *.sch-bak
 fp-info-cache
+gerber/
+*.dxf
+*.csv
+*.xlsx
 
