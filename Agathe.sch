@@ -2432,51 +2432,51 @@ F 3 "" H 2050 1100 50  0001 C CNN
 	1    2000 1850
 	1    0    0    -1  
 $EndComp
-Text GLabel 1300 1950 0    50   Input ~ 0
+Text GLabel 1300 1450 0    50   Input ~ 0
 ROW0
-Text GLabel 1300 2050 0    50   Input ~ 0
-ROW1
-Text GLabel 1300 2150 0    50   Input ~ 0
-ROW2
-Text GLabel 1300 2250 0    50   Input ~ 0
-ROW3
-Text GLabel 1300 2350 0    50   Input ~ 0
-ROW4
-Text GLabel 1300 2450 0    50   Input ~ 0
-COL0
-Text GLabel 2700 2450 2    50   Input ~ 0
-COL1
-Text GLabel 2700 2350 2    50   Input ~ 0
-COL2
-Text GLabel 2700 2250 2    50   Input ~ 0
-COL3
-Text GLabel 2700 2150 2    50   Input ~ 0
-COL4
-Text GLabel 2700 2050 2    50   Input ~ 0
-COL5
-Text GLabel 2700 1950 2    50   Input ~ 0
-COL6
-Text GLabel 2700 1850 2    50   Input ~ 0
-COL7
-Text GLabel 2700 1750 2    50   Input ~ 0
-COL8
-Text GLabel 1700 2650 3    50   Input ~ 0
-COL9
-Text GLabel 1850 2650 3    50   Input ~ 0
-COL10
-Text GLabel 2000 2650 3    50   Input ~ 0
-COL11
 Text GLabel 2700 1350 2    50   Input ~ 0
+ROW1
+Text GLabel 2700 1750 2    50   Input ~ 0
+ROW2
+Text GLabel 2700 1850 2    50   Input ~ 0
+ROW3
+Text GLabel 2700 1950 2    50   Input ~ 0
+ROW4
+Text GLabel 1300 1750 0    50   Input ~ 0
+COL0
+Text GLabel 1300 1850 0    50   Input ~ 0
+COL1
+Text GLabel 1300 1950 0    50   Input ~ 0
+COL2
+Text GLabel 1300 2050 0    50   Input ~ 0
+COL3
+Text GLabel 1300 2150 0    50   Input ~ 0
+COL4
+Text GLabel 1300 2250 0    50   Input ~ 0
+COL5
+Text GLabel 1300 2350 0    50   Input ~ 0
+COL6
+Text GLabel 2700 2050 2    50   Input ~ 0
+COL7
+Text GLabel 2700 2150 2    50   Input ~ 0
+COL8
+Text GLabel 2700 2250 2    50   Input ~ 0
+COL9
+Text GLabel 2700 2350 2    50   Input ~ 0
+COL10
+Text GLabel 2700 2450 2    50   Input ~ 0
+COL11
+Text GLabel 2300 2650 3    50   Input ~ 0
 COL12
 Text GLabel 2150 2650 3    50   Input ~ 0
 COL13
-Text GLabel 2300 2650 3    50   Input ~ 0
+Text GLabel 2000 2650 3    50   Input ~ 0
 COL14
-Text GLabel 1300 1350 0    50   Input ~ 0
+Text GLabel 1300 2450 0    50   Input ~ 0
 LED
-Text GLabel 1300 1850 0    50   Input ~ 0
+Text GLabel 1700 2650 3    50   Input ~ 0
 ROTB
-Text GLabel 1300 1750 0    50   Input ~ 0
+Text GLabel 1850 2650 3    50   Input ~ 0
 ROTA
 Wire Wire Line
 	11200 2950 11200 3050
@@ -2534,6 +2534,7 @@ Wire Wire Line
 	1050 1550 1300 1550
 Wire Wire Line
 	1050 1650 1300 1650
-NoConn ~ 2700 1550
-NoConn ~ 1300 1450
+Text GLabel 2700 1550 2    50   Input ~ 0
+RST
+NoConn ~ 1300 1350
 $EndSCHEMATC
