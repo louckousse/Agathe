@@ -2432,7 +2432,7 @@ F 3 "" H 2050 1100 50  0001 C CNN
 	1    2000 1850
 	1    0    0    -1  
 $EndComp
-Text GLabel 1300 1450 0    50   Input ~ 0
+Text GLabel 1300 2450 0    50   Input ~ 0
 ROW0
 Text GLabel 2700 1350 2    50   Input ~ 0
 ROW1
@@ -2472,7 +2472,7 @@ Text GLabel 2150 2650 3    50   Input ~ 0
 COL13
 Text GLabel 2000 2650 3    50   Input ~ 0
 COL14
-Text GLabel 1300 2450 0    50   Input ~ 0
+Text GLabel 1300 1350 0    50   Input ~ 0
 LED
 Text GLabel 1700 2650 3    50   Input ~ 0
 ROTB
@@ -2536,5 +2536,4 @@ Wire Wire Line
 	1050 1650 1300 1650
 Text GLabel 2700 1550 2    50   Input ~ 0
 RST
-NoConn ~ 1300 1350
 $EndSCHEMATC
